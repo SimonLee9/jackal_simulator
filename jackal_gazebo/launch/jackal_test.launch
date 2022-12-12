@@ -1,14 +1,9 @@
 <launch>
-  
-  
+
   <arg name="use_sim_time" default="true" />
   <arg name="gui" default="true" />
   <arg name="headless" default="false" />
   <arg name="world_name" default="$(find jackal_gazebo)/worlds/jackal_race.world" />
-  
-  <arg name="config" default="robot" />
-  <param name="use_gui" value="true"/>
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find jackal_viz)/rviz/$(arg config).rviz" />
   
   <!-- Short-term hack to support the original front_laser:=true argument for spawning
        the simulator. This will be removed in favour of using the config:=x arg instead. -->
@@ -42,4 +37,10 @@
     <arg name="config" value="$(arg config)" />
     <arg name="joystick" value="$(arg joystick)" />
   </include>
+
+  <param name="use_gui" value="true"/>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find jackal_viz)/rviz/navigation.rviz" />
+
+
 </launch>
