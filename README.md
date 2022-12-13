@@ -1,13 +1,10 @@
 # jackal_simulator
 Gazebo simulation for Jackal
 
-1 terminal : gazebo & rviz
+1 terminal : gazebo & rviz // config:=front_laser
+
 
     roslaunch jackal_gazebo jackal_test.launch 
-
-----
-
-config:=front_laser
 
 ----
 
