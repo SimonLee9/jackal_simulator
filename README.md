@@ -8,6 +8,7 @@ Gazebo simulation for Jackal
 ----
 
 config:=front_laser
+
 ----
 
     roslaunch jackal_navigation odom_navigation_demo.launch
