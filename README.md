@@ -6,6 +6,7 @@ Gazebo simulation for Jackal
     roslaunch jackal_gazebo jackal_test.launch 
 
 ----
+
 config:=front_laser
 ----
 
